@@ -16,8 +16,8 @@ if debug_mode ~= "local" then
 		-- gg.alert(tostring(resp))
 		gx = load(resp)()
 		gxapi = gg.makeRequest("https://raw.githubusercontent.com/gxosty/gxost-script-for-Sky-CoTL/"..git_branch.."/api-sky-o.lua").content
-		defsets = gx.json.decode(gg.makeRequest("https://raw.githubusercontent.com/gxosty/gxost-script-for-Sky-CoTL/"..git_branch.."/gxost-defaults.json").content)
-		langlist = gx.json.decode(gg.makeRequest("https://raw.githubusercontent.com/gxosty/gxost-script-for-Sky-CoTL/"..git_branch.."/languages.json").content)
+		defsets = gx.json.decode(gg.makeRequest("https://github.com/lioneltigerr/Harfy"..git_branch.."/gxost-defaults.json").content)
+		langlist = gx.json.decode(gg.makeRequest("https://github.com/lioneltigerr/Harfy"..git_branch.."/languages.json").content)
 	end
 else
 	gx = require("gx.gx")
